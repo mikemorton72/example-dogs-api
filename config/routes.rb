@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   # Sessions
   post "/sessions" => "sessions#create"
 
+  # Dogs
+  post "/dogs" => "dogs#create"
+
 end
