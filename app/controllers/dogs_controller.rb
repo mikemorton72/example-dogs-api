@@ -5,6 +5,7 @@ class DogsController < ApplicationController
         name: params[:name],
         age: params[:age],
         breed: params[:breed],
+        dog_years: params[:age].to_i * 7,
         user_id: current_user.id
       )
       if dog.save
